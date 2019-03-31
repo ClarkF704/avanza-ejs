@@ -1,16 +1,19 @@
-<div class="container">
-  <div class="row">
-    <div class="col-lg-12">
-      <nav>
-        <aside class='sidebar'>
-          <div class='main-nav'>
-            <ul>
-              <li>
-                <a href="/"><img id="smallEm" src="/color.png" alt="Avanza Analytics" width="50px" height="50px"></a>
-              </li>
 
+<div class="primary-nav">
 
-              <li>
+    <button href="#" class="hamburger open-panel nav-toggle">
+  <span class="screen-reader-text">Menu</span>
+  </button>
+  
+    <nav role="navigation" class="menu">
+  
+      <a href="/" class="logotype"><img id="smallEm" src="/color.png" alt="Avanza Analytics" width="50px" height="50px"></a>
+  
+      <div class="overflow-container">
+  
+        <ul class="menu-dropdown">
+  
+            <li>
                 <a href="/analytics"><img src="/dollar.png" width="30" height="30"> Analytics</a>
                 <!-- Icon found on https://www.flaticon.com -->
               </li>
@@ -20,9 +23,8 @@
 
               </li>
               <!-- <li>
-                        <a href="/clients"><img src="/team.png"
-                            width="30" height="30"> Clients</a>
-                         Icon found on https://www.flaticon.com -->
+                <a href="/clients"><img src="/team.png" width="30" height="30"> Clients</a>
+                 Icon found on https://www.flaticon.com -->
 
               <!-- </li>  -->
               <li>
@@ -39,59 +41,92 @@
 
                 <!-- Icon found on https://www.flaticon.com -->
               </li>
-
-            </ul>
+  
+          
+        </ul>
+  
+      </div>
+  
+    </nav>
+  
+  </div>
+  
+  <div class="new-wrapper">
+  
+    <div id="main">
+  
+      <div id="main-contents">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+               <h1 style="color:white; font-family: 'Exo 2', sans-serif; border-bottom: 1px solid"><span style="color:#86c232;">C</span>ontact</h1>
+        <p style="font-family: 'Exo 2', sans-serif; ">Need work done ?<span style="color:#86c232;"> Let us know</span></p>
+            </div>
           </div>
-        </aside>
-      </nav>
+        </div>
+  
+       
+        <br>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7">
+              <h2 style="color:#6b6e70;" >Dalton Farriss</h2>
+              <p>Profession:<span style="color:#86c232"> Data Analyst</span>
+              <p>Phone:<span style="color:#86c232"> 704-273-2359</span></p>
+              <p>Email:<span style="color:#86c232"> dalton@avanzaanalyticsllc.com</span></p>
+              <br>
+            </div>
+            <div class="col-lg-5">
+              <br>
+                <img src="/dalton.png" style="border-radius: 50%;" width="150" height="150">
+            </div>
+            <div class="col-lg-7">
+              <br>
+              <h2 style="color:#6b6e70;">Clark Farriss</h2>
+              <p>Profession:<span style="color:#86c232"> Full Stack Developer</span></p>
+              <p>Phone:<span style="color:#86c232"> 704-906-8922</span></p>
+              <p>Email: <span style="color:#86c232"> clark@avanzaanalyticsllc.com</span></p>
+              <br>
+            </div>
+            <div class="col-lg-5">
+              <br>
+                <img src="/clark.png" style="border-radius: 50%;" width="150" height="150">
+            </div>
+            <div class="col-lg-12">
+              <br>
+                <% include ./partials/messages %>
+                <form method="POST" action="contact" role="form">
+                  <div class="form-group">
+                    <label for="userName" style="color:#86c232;">Name</label>
+                    <input type="name" class="form-control" id="userName" name="userName" placeholder="Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="message" style="color:#86c232;">Message</label>
+                    <textarea class="form-control" id="messageInput" name="body" rows="3"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-secondary" id="submit">Send</button>
+                </form>
+            </div>
+            
+
+          </div>
+        </div>
+  
+        
+  
+      </div>
+  
     </div>
+  
   </div>
-</div>
-
-
-
-
-
-
-<div class="container">
-  <div class="row">
-    <div class="col-lg-12">
-      <h1 id="titleHead">Contact</h1>
-
-    </div>
-  </div>
-</div>
 
 </div>
 <div class="container">
   <div class="row">
     <div class="col-lg-5">
-      <h2 style="color:white;">Need Work Done?</h2>
-      <p style="color:white;">Let Us Know</p>
-      <% include ./partials/messages %>
-      <form method="POST" action="contact" role="form">
-        <div class="form-group">
-          <label for="userName" style="color:#86c232;">Name</label>
-          <input type="name" class="form-control" id="userName" name="userName" placeholder="Name">
-        </div>
-        <div class="form-group">
-          <label for="message" style="color:#86c232;">Message</label>
-          <textarea class="form-control" id="messageInput" name="body" rows="3"></textarea>
-        </div>
-        <button type="submit" class="btn btn-secondary" id="submit">Submit</button>
-      </form>
+      
     </div>
-    <div class="contactName">
-      <div class="col-lg-7">
-        <h1 style="color:#6b6e70;">Dalton Farriss</h1>
-        <p style="color:#86c232;">Profession:<br>Analyst</p>
-        <p style="color:#86c232;">Phone:<br> 704-273-2359</p>
-        <p style="color:#86c232;">Email:<br> dalton@avanzaanalyticsllc.com</p>
-        <h1 style="color:#6b6e70;">Clark Farriss</h1>
-        <p style="color:#86c232;">Profession:<br>Developer</p>
-        <p style="color:#86c232;">Phone:<br> 704-906-8922</p>
-        <p style="color:#86c232;">Email:<br> clark@avanzaanalyticsllc.com</p>
-      </div>
+    
     </div>
     <div class="container">
       <div class="row">
@@ -102,16 +137,5 @@
       </div>
     </div>
 
-  </div>
-</div>
-<div class="container">
-  <div class="row">
-    <div class="col-lg-12">
-      <div class="footIcon">
-        <a href="#"> <img src="/facebook.png" width="25" height="25"></a>
-        <a href="https://www.instagram.com/avanzaanalyticsllc/"><img src="/instagram.png" width="25" height="25"></a>
-        <a href="https://github.com/ClarkF704"> <img src="/github.png" width="25" height="25"></a>
-      </div>
-    </div>
   </div>
 </div>
