@@ -24,7 +24,7 @@
     "express-session": "^1.15.6",
     "flash": "^1.1.0",
     "fs": "0.0.1-security",
-    "googleapis": "^27.0.0",
+    "googleapis": "^39.1.0",
     "mongod": "^2.0.0",
     "mongodb": "^2.2.33",
     "mongojs": "^2.6.0",
