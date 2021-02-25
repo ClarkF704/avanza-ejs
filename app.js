@@ -13,13 +13,13 @@ const app = express();
 require('./config/passport')(passport)
 
 // DB Config
-const db = require('./config/keys').MongoURI;
+// const db = require('./config/keys').MongoURI;
 
 
 // Connect to Mongo
-mongoose.connect(db, { useNewUrlParser: true })
-.then(() => console.log("MongoDB Connected ..."))
-.catch(err => console.log(err));
+// mongoose.connect(db, { useNewUrlParser: true })
+// .then(() => console.log("MongoDB Connected ..."))
+// .catch(err => console.log(err));
 
 
 // EJS
